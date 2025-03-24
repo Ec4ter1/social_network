@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.controller.LoginView">
+   <children>
+      <AnchorPane fx:id="signInAnchor" layoutX="67.0" layoutY="77.0" prefHeight="246.0" prefWidth="366.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="usernameField1" layoutX="95.0" layoutY="97.0" promptText="Username" />
+             <TextField fx:id="passwordField1" layoutX="95.0" layoutY="141.0" promptText="Password" />
+            <Label layoutX="133.0" layoutY="35.0" style="-fx-font-size: 24;" text="Sign in" />
+            <Button layoutX="143.0" layoutY="187.0" mnemonicParsing="false" onAction="#onSignInLoginButtonAction" prefHeight="26.0" prefWidth="57.0" text="Sign in" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="signUpButton1" layoutX="209.0" layoutY="336.0" mnemonicParsing="false" onAction="#onSignUpLoginButtonAction" style="-fx-background-color: pink;" text="Sign up" underline="true" />
+      <AnchorPane fx:id="signUpAnchor" layoutX="70.0" layoutY="77.0" prefHeight="246.0" prefWidth="359.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <TextField fx:id="numeTextField2" layoutX="105.0" layoutY="66.0" promptText="First Name" />
+            <TextField fx:id="prenumeTextField3" layoutX="105.0" layoutY="104.0" promptText="Last Name" />
+            <TextField fx:id="parolaTextField2" layoutX="105.0" layoutY="146.0" promptText="password" />
+            <TextField fx:id="usernameTextField2" layoutX="105.0" layoutY="29.0" promptText="Username" />
+            <Button layoutX="140.0" layoutY="189.0" mnemonicParsing="false" onAction="#signInLoginButtonAnchor2" prefHeight="26.0" prefWidth="66.0" text="Sign up" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

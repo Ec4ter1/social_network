@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="399.0" minWidth="585.0" prefHeight="399.0" prefWidth="585.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.MainView">
+   <children>
+      <Button layoutX="447.0" layoutY="307.0" mnemonicParsing="false" onAction="#stergePrietenie" text="Delete" />
+       <TableView fx:id="tableView" layoutX="17.0" layoutY="52.0" maxHeight="410.0" maxWidth="663.0" minHeight="224.0" minWidth="0.0" prefHeight="258.0" prefWidth="344.0">
+           <columns>
+               <TableColumn fx:id="tableColumnLastName" minWidth="0.0" prefWidth="170.40002822875977" text="Last Name" />
+               <TableColumn fx:id="tableColumnFirstName" prefWidth="191.99998474121094" text="First Name" />
+           </columns>
+       </TableView>
+      <AnchorPane layoutX="372.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="81.0" layoutY="148.0" mnemonicParsing="false" onAction="#adaugaPrietenie" text="Add" />
+            <Label layoutX="81.0" layoutY="54.0" text="User">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userField" layoutX="47.0" layoutY="87.0" prefHeight="18.0" prefWidth="106.0" promptText="Username" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="15.0" text="Toti prietenii">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="423.0" layoutY="344.0" mnemonicParsing="false" onAction="#showFriendRequests" text="Friend requests" />
+      <Button layoutX="452.0" layoutY="266.0" mnemonicParsing="false" onAction="#chatButton" text="Chat" />
+      <Button fx:id="previousButton" layoutX="17.0" layoutY="320.0" mnemonicParsing="false" onAction="#onPrevious" text="Previous" />
+      <Button fx:id="nextButton" layoutX="319.0" layoutY="320.0" mnemonicParsing="false" onAction="#onNext" text="Next" />
+      <Label fx:id="labelPage" layoutX="175.0" layoutY="324.0" text="Label" />
+      <Button layoutX="453.0" layoutY="14.0" mnemonicParsing="false" onAction="#openProfile" style="-fx-background-color: hotpink;" text="You">
+         <font>
+            <Font name="Harlow Solid Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

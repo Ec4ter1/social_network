@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="258.0" prefWidth="412.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.ProfileView">
+   <children>
+       <ImageView fx:id="profileImage" fitHeight="105.0" fitWidth="131.0" layoutX="37.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" style="     -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z';     -fx-border-color: #cccccc;     -fx-border-width: 2;     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0); ">
+       </ImageView>
+      <Label layoutX="234.0" layoutY="54.0" prefHeight="50.0" prefWidth="103.0" text="Prieteni">
+         <font>
+            <Font name="Bell MT" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="nr_prieteni" layoutX="257.0" layoutY="104.0" prefHeight="18.0" prefWidth="57.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
